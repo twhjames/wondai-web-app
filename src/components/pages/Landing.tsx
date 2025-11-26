@@ -674,57 +674,44 @@ export function Landing() {
           </div>
         )}
 
-        {/* Social Proof */}
+        {/* User Validation Section */}
         {!showLogin && (
-          <div className="mt-24 pt-12 border-t space-y-8">
-            <p className="text-center text-sm text-slate-500 mb-8">
-              Trusted by high-performing teams at
-            </p>
-            <div className="flex items-center justify-center gap-12 opacity-40">
-              <div className="text-2xl tracking-tight">Helb Co</div>
-              <div className="text-2xl tracking-tight">Interpause Industries</div>
-              <div className="text-2xl tracking-tight">Echo Inc</div>
-              <div className="text-2xl tracking-tight">Maison Belora</div>
+          <div className="mt-24 space-y-8">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl tracking-tight text-slate-800 mb-3">Recognized Excellence</h2>
+              <p className="text-lg text-slate-600">Award-winning innovation in AI-powered communication</p>
             </div>
-            
-            {/* User Validation Section */}
-            <div className="max-w-4xl mx-auto pt-12">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl tracking-tight text-slate-800 mb-2">Recognized Excellence</h3>
-                <p className="text-slate-600">Award-winning innovation in AI-powered communication</p>
-              </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-amber-50 to-yellow-50 border-2 border-amber-300 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                  <div className="flex items-start gap-4">
-                    <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg shrink-0 shadow-sm">
-                      <span className="text-2xl">🥈</span>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <div className="bg-gradient-to-br from-amber-50 to-yellow-50 border-2 border-amber-300 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-4">
+                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg shrink-0 shadow-sm">
+                    <span className="text-2xl">🥈</span>
+                  </div>
+                  <div className="space-y-1">
+                    <div className="font-semibold text-amber-900 text-lg">1st Runner Up</div>
+                    <div className="text-sm text-amber-800">
+                      TechTO x Penseum Toronto Student Hackathon 2025
                     </div>
-                    <div className="space-y-1">
-                      <div className="font-semibold text-amber-900 text-lg">1st Runner Up</div>
-                      <div className="text-sm text-amber-800">
-                        TechTO x Penseum Toronto Student Hackathon 2025
-                      </div>
-                      <div className="text-xs text-amber-700 mt-2">
-                        Recognized for innovative approach to unified communication
-                      </div>
+                    <div className="text-xs text-amber-700 mt-2">
+                      Recognized for innovative approach to unified communication
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div className="bg-gradient-to-br from-blue-50 to-slate-50 border-2 border-blue-300 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                  <div className="flex items-start gap-4">
-                    <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg shrink-0 shadow-sm">
-                      <span className="text-2xl">🎖️</span>
+              <div className="bg-gradient-to-br from-blue-50 to-slate-50 border-2 border-blue-300 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-4">
+                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg shrink-0 shadow-sm">
+                    <span className="text-2xl">🎖️</span>
+                  </div>
+                  <div className="space-y-1">
+                    <div className="font-semibold text-blue-900 text-lg">Honourable Mention</div>
+                    <div className="text-sm text-blue-800">
+                      Best Overall Hack in Anthropic AI Hackathon with UofT AI
                     </div>
-                    <div className="space-y-1">
-                      <div className="font-semibold text-blue-900 text-lg">Honourable Mention</div>
-                      <div className="text-sm text-blue-800">
-                        Best Overall Hack in Anthropic AI Hackathon with UofT AI
-                      </div>
-                      <div className="text-xs text-blue-700 mt-2">
-                        Outstanding implementation of AI-powered solutions
-                      </div>
+                    <div className="text-xs text-blue-700 mt-2">
+                      Outstanding implementation of AI-powered solutions
                     </div>
                   </div>
                 </div>
@@ -732,7 +719,41 @@ export function Landing() {
             </div>
           </div>
         )}
+
+        {/* Existing Clients Section */}
+        {!showLogin && (
+          <div className="mt-24 space-y-8">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl tracking-tight text-slate-800 mb-3">Trusted by Teams Worldwide</h2>
+              <p className="text-lg text-slate-600">Join high-performing teams managing their communications with Wondai</p>
+            </div>
+
+            <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto items-center">
+              <div className="flex items-center justify-center p-6 bg-white rounded-lg border-2 shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-2xl font-medium tracking-tight text-slate-700">Helb Co</div>
+              </div>
+              <div className="flex items-center justify-center p-6 bg-white rounded-lg border-2 shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-2xl font-medium tracking-tight text-slate-700">Interpause Industries</div>
+              </div>
+              <div className="flex items-center justify-center p-6 bg-white rounded-lg border-2 shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-2xl font-medium tracking-tight text-slate-700">Echo Inc</div>
+              </div>
+              <div className="flex items-center justify-center p-6 bg-white rounded-lg border-2 shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-2xl font-medium tracking-tight text-slate-700">Maison Belora</div>
+              </div>
+            </div>
+          </div>
+        )}
       </main>
+
+      {/* Footer */}
+      <footer className="border-t bg-white mt-24">
+        <div className="max-w-7xl mx-auto px-8 py-8">
+          <div className="text-center text-sm text-slate-600">
+            © {new Date().getFullYear()} Wondai. All rights reserved.
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
