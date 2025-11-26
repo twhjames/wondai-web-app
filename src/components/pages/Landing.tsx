@@ -687,15 +687,47 @@ export function Landing() {
               <div className="text-2xl tracking-tight">Maison Belora</div>
             </div>
             
-            {/* Achievement Badge */}
-            <div className="flex justify-center pt-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-300 rounded-full shadow-sm">
-                <div className="flex items-center justify-center w-5 h-5 bg-gradient-to-br from-amber-500 to-yellow-500 rounded-full">
-                  <span className="text-white text-xs">🏆</span>
+            {/* User Validation Section */}
+            <div className="max-w-4xl mx-auto pt-12">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl tracking-tight text-slate-800 mb-2">Recognized Excellence</h3>
+                <p className="text-slate-600">Award-winning innovation in AI-powered communication</p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-gradient-to-br from-amber-50 to-yellow-50 border-2 border-amber-300 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg shrink-0 shadow-sm">
+                      <span className="text-2xl">🥈</span>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="font-semibold text-amber-900 text-lg">1st Runner Up</div>
+                      <div className="text-sm text-amber-800">
+                        TechTO x Penseum Toronto Student Hackathon 2025
+                      </div>
+                      <div className="text-xs text-amber-700 mt-2">
+                        Recognized for innovative approach to unified communication
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <span className="text-sm font-medium text-amber-900">
-                  1st Runner Up • TechTO x Penseum Toronto Student Hackathon
-                </span>
+
+                <div className="bg-gradient-to-br from-blue-50 to-slate-50 border-2 border-blue-300 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg shrink-0 shadow-sm">
+                      <span className="text-2xl">🎖️</span>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="font-semibold text-blue-900 text-lg">Honourable Mention</div>
+                      <div className="text-sm text-blue-800">
+                        Best Overall Hack in Anthropic AI Hackathon with UofT AI
+                      </div>
+                      <div className="text-xs text-blue-700 mt-2">
+                        Outstanding implementation of AI-powered solutions
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
